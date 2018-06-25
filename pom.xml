@@ -14,12 +14,13 @@
         <java.version>1.9</java.version>
         <maven.compiler.target>1.9</maven.compiler.target>
         <maven.compiler.source>1.9</maven.compiler.source>
+        <parent-version>1.0-SNAPSHOT</parent-version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>space.eignatik.prt</groupId>
-            <artifactId>parent</artifactId>
+            <artifactId>parent-prt</artifactId>
             <version>${parent-version}</version>
         </dependency>
 
