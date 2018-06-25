@@ -6,7 +6,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "employee")
-public class User {
+public class User implements IEntity {
     @Id
     private int id;
     private String fname;
@@ -16,24 +16,27 @@ public class User {
         return id;
     }
 
-    public void setId(int id) {
+    public User setId(int id) {
         this.id = id;
+        return this;
     }
 
     public String getFname() {
         return fname;
     }
 
-    public void setFname(String fname) {
+    public User setFname(String fname) {
         this.fname = fname;
+        return this;
     }
 
     public String getLname() {
         return lname;
     }
 
-    public void setLname(String lname) {
+    public User setLname(String lname) {
         this.lname = lname;
+        return this;
     }
 
     @Override
