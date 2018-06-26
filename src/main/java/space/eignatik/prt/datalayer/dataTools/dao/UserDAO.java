@@ -1,7 +1,7 @@
 package space.eignatik.prt.datalayer.dataTools.dao;
 
-import space.eignatik.prt.datalayer.modelEntities.User;
+import space.eignatik.prt.datalayer.modelEntities.Employee;
 
-public class UserDAO extends GenericDAO<User> {
+public class UserDAO extends GenericDAO<Employee> {
 
 }

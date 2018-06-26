@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.User" table="employee">
+    <class name="space.eignatik.prt.datalayer.modelEntities.Employee" table="employee">
 
         <meta attribute = "class-description">
             Representation of employee in the company
@@ -14,8 +14,8 @@
             <generator class="native"/>
         </id>
 
-        <property name="fname" column="fname" type="string"/>
-        <property name="lname" column="lname" type="string"/>
+        <property name="fname" column="fname" type="java.lang.String"/>
+        <property name="lname" column="lname" type="java.lang.String"/>
 
     </class>
 </hibernate-mapping>

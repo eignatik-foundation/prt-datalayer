@@ -1,18 +1,18 @@
 package space.eignatik.prt.datalayer.dataTools.dao;
 
 import org.testng.annotations.Test;
-import space.eignatik.prt.datalayer.modelEntities.User;
+import space.eignatik.prt.datalayer.modelEntities.Employee;
 
-public class UserDAOTest {
-    private IDAO<User> dao = new UserDAO();
+public class EmployeeDAOTest {
+    private IDAO<Employee> dao = new UserDAO();
 
     @Test
     public void testWhenAddWithItem_thenItWillBeCreatedInDB() {
-        dao.add(new User()
+        dao.add(new Employee()
                     .setId(1000)
                     .setFname("John")
                     .setLname("Dorian")
         );
-        dao.get(User.class, 1000);
+        dao.get(Employee.class, 1000);
     }
 }
