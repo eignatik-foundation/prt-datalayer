@@ -34,7 +34,12 @@ public abstract class GenericDAO<T extends IEntity> implements IDAO<T> {
 
     @Override
     public T get(Class<T> type, int id) {
-        return getCurrentSession().get(type, id);
+        Session session = getCurrentSession();
+        Transaction transaction = session.beginTransaction();
+        T item = session.get(type, id);
+        transaction.commit();
+        LOGGER.info("Item from DB: " + item);
+        return item;
     }
 
     @Override
