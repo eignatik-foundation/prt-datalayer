@@ -22,53 +22,64 @@ import java.util.List;
  */
 abstract class GenericDAO<T extends IEntity> implements IDAO<T> {
     private static final Logger LOGGER = LoggerFactory.getLogger(GenericDAO.class.getName());
-    private static final String COMMITED_STATUS = "COMMITED";
     private ISessionFactoryUtil factoryUtil = new SessionFactoryUtil();
 
-    protected Session getCurrentSession() {
-        return factoryUtil.
-                getSessionFactory()
-                .getCurrentSession();
-    }
-
     @Override
-    public T add(T item) {
-        Session session = getCurrentSession();
-        Transaction transaction = session.beginTransaction();
-        session.save(item);
+    public void add(T item) {
+        Transaction transaction = getCurrentSession().beginTransaction();
+        getCurrentSession().save(item);
         transaction.commit();
         LOGGER.info(transaction.getStatus().name() + " item: " + item);
-        return COMMITED_STATUS.equals(transaction.getStatus().name())?
-                item : null;
     }
 
     @Override
     public T get(Class<T> type, int id) {
-        Session session = getCurrentSession();
-        Transaction transaction = session.beginTransaction();
-        T item = session.get(type, id);
+        Transaction transaction = getCurrentSession().beginTransaction();
+        T item = getCurrentSession().get(type, id);
         transaction.commit();
         LOGGER.info("Item from DB: " + item);
         return item;
     }
 
     @Override
-    public List<T> getAll() {
-        return null;
+    public List<T> getAll(Class<T> type) {
+        Transaction transaction = getCurrentSession().beginTransaction();
+        List<T> resultItems = getCurrentSession()
+                .createQuery("from " + type.getSimpleName())
+                .list();
+        transaction.commit();
+        LOGGER.info((resultItems != null? resultItems.size() : 0) + " items obtained from db");
+        return resultItems;
     }
 
     @Override
-    public T delete(int id) {
-        return null;
+    public T delete(Class<T> type, int id) {
+        Transaction transaction = getCurrentSession().beginTransaction();
+        T item = getCurrentSession().get(type, id);
+        if (item != null) {
+            getCurrentSession().delete(item);
+        }
+        transaction.commit();
+        LOGGER.info("Item from DB: " + item + " has been removed.");
+        return item;
     }
 
     @Override
-    public T update(T item) {
-        return null;
+    public void update(T item) {
+        Transaction transaction = getCurrentSession().beginTransaction();
+        getCurrentSession().update(item);
+        transaction.commit();
+        LOGGER.info("Item from DB: " + item + " has been updated.");
     }
 
     @Override
     public void setFactoryUtil(ISessionFactoryUtil factoryUtil) {
         this.factoryUtil = factoryUtil;
+    }
+
+    protected Session getCurrentSession() {
+        return factoryUtil.
+                getSessionFactory()
+                .getCurrentSession();
     }
 }
