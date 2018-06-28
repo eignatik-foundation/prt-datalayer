@@ -1,5 +1,9 @@
 package space.eignatik.prt.datalayer.dataTools.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,8 +13,12 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class EmployeeDAOTest {
-    private IDAO<Employee> dao = new UserDAO();
+@ContextConfiguration(value = "classpath:datalayer-context.xml")
+public class EmployeeDAOTest extends AbstractTestNGSpringContextTests {
+
+    @Autowired
+    @Qualifier(value = "userDAO")
+    private IDAO<Employee> dao;
 
     @BeforeClass
     public void setUpDB() {
