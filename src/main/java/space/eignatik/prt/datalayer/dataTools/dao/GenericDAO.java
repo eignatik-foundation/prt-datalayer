@@ -4,11 +4,13 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 import space.eignatik.prt.datalayer.dataTools.session.ISessionFactoryUtil;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtil;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
 import space.eignatik.prt.datalayer.modelEntities.IEntity;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 /**
@@ -20,6 +22,9 @@ import java.util.List;
  * @see SessionFactoryUtilLocal
  * @param <T> is project entity classes
  */
+@SuppressWarnings("unchecked")
+@Repository
+@Transactional
 abstract class GenericDAO<T extends IEntity> implements IDAO<T> {
     private static final Logger LOGGER = LoggerFactory.getLogger(GenericDAO.class.getName());
     private ISessionFactoryUtil factoryUtil = new SessionFactoryUtil();
