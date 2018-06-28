@@ -17,7 +17,7 @@ import static org.testng.Assert.*;
 public class EmployeeDAOTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
-    @Qualifier(value = "userDAO")
+    @Qualifier(value = "employeeDAO")
     private IDAO<Employee> dao;
 
     @BeforeClass

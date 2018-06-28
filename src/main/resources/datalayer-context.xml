@@ -7,5 +7,5 @@
     <context:annotation-config />
     <context:component-scan base-package="space.eignatik.prt.datalayer"/>
 
-    <bean id="userDAO" class="space.eignatik.prt.datalayer.dataTools.dao.UserDAO"/>
+    <bean id="employeeDAO" class="space.eignatik.prt.datalayer.dataTools.dao.EmployeeDAO"/>
 </beans>
