@@ -20,5 +20,8 @@
         <mapping resource="mappings/managers.hbm.xml" />
         <mapping resource="mappings/grade.hbm.xml" />
         <mapping resource="mappings/grades.hbm.xml" />
+        <mapping resource="mappings/department.hbm.xml" />
+        <mapping resource="mappings/departments.hbm.xml" />
+        <mapping resource="mappings/usergoals.hbm.xml" />
     </session-factory>
 </hibernate-configuration>

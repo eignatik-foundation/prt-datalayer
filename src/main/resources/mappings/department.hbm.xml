@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="space.eignatik.prt.datalayer.modelEntities.Department" table="department">
+
+        <meta attribute = "class-description">
+            Representation of department in the company
+        </meta>
+
+        <id name="id" type="integer" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="title" column="title" type="java.lang.String"/>
+
+    </class>
+</hibernate-mapping>
