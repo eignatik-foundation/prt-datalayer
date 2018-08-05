@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="space.eignatik.prt.datalayer.modelEntities.UserGoals" table="user_goals">
+
+        <meta attribute = "class-description">
+            Representation of user goals
+        </meta>
+
+        <id name="id" type="integer" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="goalName" column="goalname" type="java.lang.String"/>
+        <property name="description" column="description" type="java.lang.String"/>
+        <property name="userId" column="user_id" type="integer"/>
+        <property name="startDate" column="start_date" type="java.util.Date"/>
+        <property name="endDate" column="end_date" type="java.util.Date"/>
+
+    </class>
+</hibernate-mapping>
