@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="space.eignatik.prt.datalayer.modelEntities.RolePermissions" table="role_permissions">
+
+        <meta attribute = "class-description">
+            Representation of relations between roles and permissions. Juxtapositions between them.
+        </meta>
+
+        <id name="id" type="integer" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="roleId" column="role_id" type="integer"/>
+        <property name="permId" column="perm_id" type="integer"/>
+
+    </class>
+</hibernate-mapping>

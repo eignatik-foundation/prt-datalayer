@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="space.eignatik.prt.datalayer.modelEntities.Permission" table="permission">
+
+        <meta attribute = "class-description">
+            Representation of permission on the service with description and short name
+        </meta>
+
+        <id name="id" type="integer" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="shortcut" column="shortcut" type="java.lang.String"/>
+        <property name="description" column="description" type="java.lang.String"/>
+
+    </class>
+</hibernate-mapping>
