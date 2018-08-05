@@ -9,4 +9,5 @@
 
     <bean id="employeeDAO" class="space.eignatik.prt.datalayer.dataTools.dao.EmployeeDAO"/>
     <bean id="departmentDAO" class="space.eignatik.prt.datalayer.dataTools.dao.DepartmentDAO"/>
+    <bean id="departmentsDAO" class="space.eignatik.prt.datalayer.dataTools.dao.DepartmentsDAO"/>
 </beans>
