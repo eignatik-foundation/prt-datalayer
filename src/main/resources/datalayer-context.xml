@@ -8,6 +8,7 @@
     <context:component-scan base-package="space.eignatik.prt.datalayer"/>
 
     <bean id="employeeDAO" class="space.eignatik.prt.datalayer.dataTools.dao.EmployeeDAO"/>
+    <bean id="employeeScoreDAO" class="space.eignatik.prt.datalayer.dataTools.dao.EmployeeScoreDAO"/>
     <bean id="departmentDAO" class="space.eignatik.prt.datalayer.dataTools.dao.DepartmentDAO"/>
     <bean id="departmentsDAO" class="space.eignatik.prt.datalayer.dataTools.dao.DepartmentsDAO"/>
 </beans>
