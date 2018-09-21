@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
-import space.eignatik.prt.datalayer.modelEntities.Employee;
+import space.eignatik.prt.datalayer.dataTools.entities.Employee;
 import java.util.List;
 
 import static org.testng.Assert.*;

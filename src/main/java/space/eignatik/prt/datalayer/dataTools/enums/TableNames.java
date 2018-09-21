@@ -1,6 +1,6 @@
 package space.eignatik.prt.datalayer.dataTools.enums;
 
-import space.eignatik.prt.datalayer.modelEntities.*;
+import space.eignatik.prt.datalayer.dataTools.entities.*;
 
 public enum TableNames {
     DEP("department", Department.class),

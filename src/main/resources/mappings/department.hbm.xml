@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.Department" table="department">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.Department" table="department">
 
         <meta attribute = "class-description">
             Representation of department in the company

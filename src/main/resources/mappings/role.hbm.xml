@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.Role" table="role">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.Role" table="role">
 
         <meta attribute = "class-description">
             Representation of any role

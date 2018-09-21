@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import space.eignatik.prt.datalayer.dataTools.session.ISessionFactoryUtil;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtil;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
-import space.eignatik.prt.datalayer.modelEntities.IEntity;
+import space.eignatik.prt.datalayer.dataTools.entities.IEntity;
 
 import javax.transaction.Transactional;
 import java.util.List;

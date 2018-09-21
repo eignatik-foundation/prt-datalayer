@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.Employee" table="employee">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.Employee" table="employee">
 
         <meta attribute = "class-description">
             Representation of employee in the company

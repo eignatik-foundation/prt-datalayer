@@ -1,7 +1,7 @@
 package space.eignatik.prt.datalayer.dataTools.dao;
 
 import space.eignatik.prt.datalayer.dataTools.session.ISessionFactoryUtil;
-import space.eignatik.prt.datalayer.modelEntities.IEntity;
+import space.eignatik.prt.datalayer.dataTools.entities.IEntity;
 
 import java.util.List;
 
