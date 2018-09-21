@@ -1,4 +1,4 @@
-package space.eignatik.prt.datalayer.modelEntities;
+package space.eignatik.prt.datalayer.dataTools.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,27 +7,27 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "user_roles")
-public class UserRoles implements IEntity {
+@Table(name = "departments")
+public class Departments implements IEntity {
     @Id @GeneratedValue private int id;
-    private int roleId;
+    private int deptId;
     private int userId;
 
     public int getId() {
         return id;
     }
 
-    public UserRoles setId(int id) {
+    public Departments setId(int id) {
         this.id = id;
         return this;
     }
 
-    public int getRoleId() {
-        return roleId;
+    public int getDeptId() {
+        return deptId;
     }
 
-    public UserRoles setRoleId(int roleId) {
-        this.roleId = roleId;
+    public Departments setDeptId(int deptId) {
+        this.deptId = deptId;
         return this;
     }
 
@@ -35,7 +35,7 @@ public class UserRoles implements IEntity {
         return userId;
     }
 
-    public UserRoles setUserId(int userId) {
+    public Departments setUserId(int userId) {
         this.userId = userId;
         return this;
     }
@@ -44,23 +44,23 @@ public class UserRoles implements IEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        UserRoles that = (UserRoles) o;
+        Departments that = (Departments) o;
         return id == that.id &&
-                roleId == that.roleId &&
+                deptId == that.deptId &&
                 userId == that.userId;
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, roleId, userId);
+        return Objects.hash(id, deptId, userId);
     }
 
     @Override
     public String toString() {
-        return "UserRoles{" +
+        return "Departments{" +
                 "id=" + id +
-                ", deptId=" + roleId +
+                ", deptId=" + deptId +
                 ", userId=" + userId +
                 '}';
     }

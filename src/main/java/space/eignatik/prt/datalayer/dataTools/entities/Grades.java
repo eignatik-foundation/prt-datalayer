@@ -1,4 +1,4 @@
-package space.eignatik.prt.datalayer.modelEntities;
+package space.eignatik.prt.datalayer.dataTools.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,17 +7,27 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "managers")
-public class Managers implements IEntity {
+@Table(name = "grades")
+public class Grades implements IEntity {
     @Id @GeneratedValue private int id;
+    private int gradeId;
     private int userId;
 
     public int getId() {
         return id;
     }
 
-    public Managers setId(int id) {
+    public Grades setId(int id) {
         this.id = id;
+        return this;
+    }
+
+    public int getGradeId() {
+        return gradeId;
+    }
+
+    public Grades setGradeId(int gradeId) {
+        this.gradeId = gradeId;
         return this;
     }
 
@@ -25,7 +35,7 @@ public class Managers implements IEntity {
         return userId;
     }
 
-    public Managers setUserId(int userId) {
+    public Grades setUserId(int userId) {
         this.userId = userId;
         return this;
     }
@@ -34,20 +44,23 @@ public class Managers implements IEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Managers managers = (Managers) o;
-        return id == managers.id &&
-                userId == managers.userId;
+        Grades grades = (Grades) o;
+        return id == grades.id &&
+                gradeId == grades.gradeId &&
+                userId == grades.userId;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userId);
+
+        return Objects.hash(id, gradeId, userId);
     }
 
     @Override
     public String toString() {
-        return "Managers{" +
+        return "Grades{" +
                 "id=" + id +
+                ", gradeId=" + gradeId +
                 ", userId=" + userId +
                 '}';
     }

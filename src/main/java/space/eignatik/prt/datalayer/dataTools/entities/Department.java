@@ -1,4 +1,4 @@
-package space.eignatik.prt.datalayer.modelEntities;
+package space.eignatik.prt.datalayer.dataTools.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

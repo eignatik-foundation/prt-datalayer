@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.Grade" table="grade">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.Grade" table="grade">
 
         <meta attribute = "class-description">
             Representation of grade in the company

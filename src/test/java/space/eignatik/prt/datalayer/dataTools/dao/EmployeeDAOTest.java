@@ -2,19 +2,19 @@ package space.eignatik.prt.datalayer.dataTools.dao;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import space.eignatik.prt.datalayer.dataTools.entities.Employee;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
-import space.eignatik.prt.datalayer.modelEntities.Employee;
+
 import java.util.List;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNull;
+import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.EMP;
 
-@ContextConfiguration(value = "classpath:datalayer-context.xml")
-public class EmployeeDAOTest extends AbstractTestNGSpringContextTests {
+public class EmployeeDAOTest extends BaseDAOTest {
 
     @Autowired
     @Qualifier(value = "employeeDAO")
@@ -27,7 +27,7 @@ public class EmployeeDAOTest extends AbstractTestNGSpringContextTests {
 
     @BeforeMethod
     public void resetDB() {
-        DAOTestUtil.deleteAllFromTable("Employee");
+        DAOTestUtil.deleteAllFromTable(EMP.getEntityName());
     }
 
     @Test

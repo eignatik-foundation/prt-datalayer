@@ -1,4 +1,4 @@
-package space.eignatik.prt.datalayer.modelEntities;
+package space.eignatik.prt.datalayer.dataTools.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,26 +7,27 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "role")
-public class Role implements IEntity {
+@Table(name = "team")
+public class Team implements IEntity {
+
     @Id @GeneratedValue private int id;
-    private String role;
+    private String teamName;
 
     public int getId() {
         return id;
     }
 
-    public Role setId(int id) {
+    public Team setId(int id) {
         this.id = id;
         return this;
     }
 
-    public String getRole() {
-        return role;
+    public String getTeamName() {
+        return teamName;
     }
 
-    public Role setRole(String role) {
-        this.role = role;
+    public Team setTeamName(String teamName) {
+        this.teamName = teamName;
         return this;
     }
 
@@ -34,22 +35,22 @@ public class Role implements IEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Role that = (Role) o;
-        return id == that.id &&
-                Objects.equals(role, that.role);
+        Team team = (Team) o;
+        return id == team.id &&
+                Objects.equals(teamName, team.teamName);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(id, role);
+        return Objects.hash(id, teamName);
     }
 
     @Override
     public String toString() {
-        return "Role{" +
+        return "Team{" +
                 "id=" + id +
-                ", title='" + role + '\'' +
+                ", teamName='" + teamName + '\'' +
                 '}';
     }
 }

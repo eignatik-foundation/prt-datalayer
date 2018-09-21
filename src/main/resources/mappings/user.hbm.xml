@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.User" table="emp_user">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.User" table="emp_user">
 
         <meta attribute = "class-description">
             Representation of user in system that related with employee in the company

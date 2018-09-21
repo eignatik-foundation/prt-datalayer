@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.RolePermissions" table="role_permissions">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.RolePermissions" table="role_permissions">
 
         <meta attribute = "class-description">
             Representation of relations between roles and permissions. Juxtapositions between them.

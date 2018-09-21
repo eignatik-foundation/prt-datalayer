@@ -1,6 +1,5 @@
 package space.eignatik.prt.datalayer.dataTools.dao;
 
-import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import space.eignatik.prt.datalayer.dataTools.session.ISessionFactoryUtil;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtil;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
-import space.eignatik.prt.datalayer.modelEntities.IEntity;
+import space.eignatik.prt.datalayer.dataTools.entities.IEntity;
 
 import javax.transaction.Transactional;
 import java.util.List;

@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.UserGoals" table="user_goals">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.UserGoals" table="user_goals">
 
         <meta attribute = "class-description">
             Representation of user goals

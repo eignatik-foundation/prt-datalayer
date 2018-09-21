@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.modelEntities.Permission" table="permission">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.Permission" table="permission">
 
         <meta attribute = "class-description">
             Representation of permission on the service with description and short name
