@@ -5,13 +5,14 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
 import space.eignatik.prt.datalayer.dataTools.entities.Department;
+import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
 
 import java.util.List;
 
-import static org.testng.Assert.*;
-import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNull;
+import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.DEP;
 
 public class DepartmentDAOTest extends BaseDAOTest {
 

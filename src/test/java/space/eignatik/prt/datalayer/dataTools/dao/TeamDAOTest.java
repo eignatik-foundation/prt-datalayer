@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import space.eignatik.prt.datalayer.dataTools.entities.Permission;
 import space.eignatik.prt.datalayer.dataTools.entities.Team;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
 
@@ -13,7 +12,6 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
-import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.PERM;
 import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.TEAM;
 
 public class TeamDAOTest extends BaseDAOTest {

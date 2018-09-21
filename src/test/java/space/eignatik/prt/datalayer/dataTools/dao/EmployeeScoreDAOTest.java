@@ -5,8 +5,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
 import space.eignatik.prt.datalayer.dataTools.entities.EmployeeScore;
+import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
 
 import java.util.List;
 
