@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="space.eignatik.prt.datalayer.dataTools.entities.UserRoles" table="departments">
+    <class name="space.eignatik.prt.datalayer.dataTools.entities.UserRoles" table="user_roles">
 
         <meta attribute = "class-description">
             Representation of users roles and permissions according roles
