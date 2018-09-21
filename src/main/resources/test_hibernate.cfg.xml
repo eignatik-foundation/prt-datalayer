@@ -11,13 +11,23 @@
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+
+        <!-- Mappings -->
         <mapping resource="mappings/employee.hbm.xml" />
+        <mapping resource="mappings/user.hbm.xml" />
+        <mapping resource="mappings/team.hbm.xml" />
+        <mapping resource="mappings/teams.hbm.xml" />
+        <mapping resource="mappings/managers.hbm.xml" />
+        <mapping resource="mappings/grade.hbm.xml" />
+        <mapping resource="mappings/grades.hbm.xml" />
         <mapping resource="mappings/department.hbm.xml" />
         <mapping resource="mappings/departments.hbm.xml" />
+        <mapping resource="mappings/usergoals.hbm.xml" />
         <mapping resource="mappings/employeescore.hbm.xml" />
-        <mapping resource="mappings/grade.hbm.xml" />
-        <mapping resource="mappings/managers.hbm.xml" />
         <mapping resource="mappings/permission.hbm.xml" />
+        <mapping resource="mappings/rolepermissions.hbm.xml" />
+        <mapping resource="mappings/role.hbm.xml" />
+        <mapping resource="mappings/userroles.hbm.xml" />
 
     </session-factory>
 </hibernate-configuration>

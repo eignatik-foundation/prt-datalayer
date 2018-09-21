@@ -14,4 +14,13 @@
     <bean id="gradeDAO" class="space.eignatik.prt.datalayer.dataTools.dao.GradeDAO"/>
     <bean id="managersDAO" class="space.eignatik.prt.datalayer.dataTools.dao.ManagersDAO"/>
     <bean id="permissionDAO" class="space.eignatik.prt.datalayer.dataTools.dao.PermissionDAO"/>
+    <bean id="gradesDAO" class="space.eignatik.prt.datalayer.dataTools.dao.GradesDAO"/>
+    <bean id="roleDAO" class="space.eignatik.prt.datalayer.dataTools.dao.RoleDAO"/>
+    <bean id="rolePermissionsDAO" class="space.eignatik.prt.datalayer.dataTools.dao.RolePermissionsDAO"/>
+    <bean id="teamDAO" class="space.eignatik.prt.datalayer.dataTools.dao.TeamDAO"/>
+    <bean id="teamsDAO" class="space.eignatik.prt.datalayer.dataTools.dao.TeamsDAO"/>
+    <bean id="userDAO" class="space.eignatik.prt.datalayer.dataTools.dao.UserDAO"/>
+    <bean id="userGoalsDAO" class="space.eignatik.prt.datalayer.dataTools.dao.UserGoalsDAO"/>
+    <bean id="userRolesDAO" class="space.eignatik.prt.datalayer.dataTools.dao.UserRolesDAO"/>
+
 </beans>
