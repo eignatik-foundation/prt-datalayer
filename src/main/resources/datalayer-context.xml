@@ -13,4 +13,5 @@
     <bean id="departmentsDAO" class="space.eignatik.prt.datalayer.dataTools.dao.DepartmentsDAO"/>
     <bean id="gradeDAO" class="space.eignatik.prt.datalayer.dataTools.dao.GradeDAO"/>
     <bean id="managersDAO" class="space.eignatik.prt.datalayer.dataTools.dao.ManagersDAO"/>
+    <bean id="permissionDAO" class="space.eignatik.prt.datalayer.dataTools.dao.PermissionDAO"/>
 </beans>

@@ -17,6 +17,7 @@
         <mapping resource="mappings/employeescore.hbm.xml" />
         <mapping resource="mappings/grade.hbm.xml" />
         <mapping resource="mappings/managers.hbm.xml" />
+        <mapping resource="mappings/permission.hbm.xml" />
 
     </session-factory>
 </hibernate-configuration>
