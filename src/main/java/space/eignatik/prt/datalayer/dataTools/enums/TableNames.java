@@ -1,4 +1,4 @@
-package space.eignatik.prt.datalayer.dataTools;
+package space.eignatik.prt.datalayer.dataTools.enums;
 
 import space.eignatik.prt.datalayer.modelEntities.*;
 

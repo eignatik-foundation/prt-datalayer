@@ -6,15 +6,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import space.eignatik.prt.datalayer.dataTools.session.SessionFactoryUtilLocal;
-import space.eignatik.prt.datalayer.modelEntities.Managers;
 import space.eignatik.prt.datalayer.modelEntities.Permission;
 
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
-import static space.eignatik.prt.datalayer.dataTools.TableNames.MANAGERS;
-import static space.eignatik.prt.datalayer.dataTools.TableNames.PERM;
+import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.PERM;
 
 public class PermissionDAOTest extends BaseDAOTest {
 

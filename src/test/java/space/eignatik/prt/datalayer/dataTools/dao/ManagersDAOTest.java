@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
-import static space.eignatik.prt.datalayer.dataTools.TableNames.MANAGERS;
+import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.MANAGERS;
 
 public class ManagersDAOTest extends BaseDAOTest {
 

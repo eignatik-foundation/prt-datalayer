@@ -11,7 +11,7 @@ import space.eignatik.prt.datalayer.modelEntities.Departments;
 import java.util.List;
 
 import static org.testng.Assert.*;
-import static space.eignatik.prt.datalayer.dataTools.TableNames.DEPS;
+import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.DEPS;
 
 public class DepartmentsDAOTest extends BaseDAOTest {
     @Autowired

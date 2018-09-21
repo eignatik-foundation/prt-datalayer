@@ -12,7 +12,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
-import static space.eignatik.prt.datalayer.dataTools.TableNames.EMP_SCORE;
+import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.EMP_SCORE;
 
 public class EmployeeScoreDAOTest extends BaseDAOTest {
 

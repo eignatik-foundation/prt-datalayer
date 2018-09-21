@@ -10,7 +10,7 @@ import space.eignatik.prt.datalayer.modelEntities.Employee;
 import java.util.List;
 
 import static org.testng.Assert.*;
-import static space.eignatik.prt.datalayer.dataTools.TableNames.*;
+import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.*;
 
 public class EmployeeDAOTest extends BaseDAOTest {
 

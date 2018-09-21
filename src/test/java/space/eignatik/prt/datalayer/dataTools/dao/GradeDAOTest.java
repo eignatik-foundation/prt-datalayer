@@ -11,7 +11,7 @@ import space.eignatik.prt.datalayer.modelEntities.Grade;
 import java.util.List;
 
 import static org.testng.Assert.*;
-import static space.eignatik.prt.datalayer.dataTools.TableNames.GRADE;
+import static space.eignatik.prt.datalayer.dataTools.enums.TableNames.GRADE;
 
 public class GradeDAOTest extends BaseDAOTest {
 
