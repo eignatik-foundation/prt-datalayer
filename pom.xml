@@ -17,6 +17,27 @@
         <parent-version>1.0-SNAPSHOT</parent-version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>dev-azure.com-perfo-artifacts</id>
+            <url>https://pkgs.dev.azure.com/perfo-foundation/_packaging/perfo-artifacts/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>dev-azure.com-perfo-artifacts</id>
+            <layout>default</layout>
+            <url>https://pkgs.dev.azure.com/perfo-foundation/_packaging/perfo-artifacts/maven/v1</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>space.eignatik.prt</groupId>
